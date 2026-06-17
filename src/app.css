@@ -3,3 +3,93 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey-50: #FAFAFA;
+    --grey-100: #EFEFEF;
+    --grey-200: #D8D8D8;
+    --grey-500: #A0A0A0;
+    --grey-800: #444444;
+
+    --space-0: 0px;
+    --space-200: calc(16 * 1rem);
+    --space-300: calc(24 * 1rem);
+    --space-400: calc(32 * 1rem);
+    --space-500: calc(40 * 1rem);
+    --space-600: calc(48 * 1rem);
+    --space-700: calc(56 * 1rem);
+    --space-800: calc(64 * 1rem);
+    --space-900: calc(72 * 1rem);
+    --space-1000: calc(80 * 1rem);
+
+    --font: 'League Spartan', sans-serif;
+
+    --font-xl: calc(48 / 16 * 1rem);
+    --font-lg: calc(40 / 16 * 1rem);
+    --font-md: calc(16 / 16 * 1rem);
+    --font-sm: calc(15 / 16 * 1rem);
+
+    --font-semiBold: 600;
+    --font-bold: 700;
+    --font-medium: 500;
+
+    --lineheight-wide: 1.4;
+    --lineheight-normal: 1;
+    --lineheight-tight: 0.9;
+
+    --letterspacing-sm: calc(-2 / 16 * 1rem);
+    --letterspacing-xs: calc(-0.7 / 16 * 1rem);
+    --letterspacing-md: calc(-0.5 / 16 * 1rem);
+    --letterspacing-lg: calc(0.5 / 16 * 1rem);
+    --letterspacing-xl: calc(7 / 16 * 1rem);
+    --letterspacing-xxl: calc(12.5 / 16 * 1rem);
+
+}
+
+body {
+    font-family: var(--font);
+}
+
+.text-1 {
+    font-size: var(--font-xl);
+    font-weight: var(--font-semiBold);
+    line-height: var(--lineheight-tight);
+    letter-spacing: var(--letterspacing-sm);
+}
+
+.text-2 {
+    font-size: var(--font-lg);
+    font-weight: var(--font-semiBold);
+    line-height: var(--lineheight-normal);
+    letter-spacing: var(--letterspacing-sm);
+}
+
+.text-3 {
+    font-size: var(--font-md);
+    font-weight: var(--font-bold);
+    line-height: var(--lineheight-wide);
+    letter-spacing: var(--letterspacing-xl);
+}
+
+.text-3-semibold {
+    font-size: var(--font-md);
+    font-weight: var(--font-semiBold);
+    line-height: var(--lineheight-normal);
+    letter-spacing: var(--letterspacing-xs);
+}
+
+.text-3-medium {
+    font-size: var(--font-md);
+    font-weight: var(--font-medium);
+    line-height: var(--lineheight-wide);
+    letter-spacing: var(--letterspacing-md);
+}
+
+.text-4 {
+    font-size: var(--font-sm);
+    font-weight: var(--font-medium);
+    line-height: var(--lineheight-normal);
+    letter-spacing: var(--letterspacing-xxl);
+}
