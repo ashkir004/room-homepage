@@ -41,6 +41,10 @@
     grid-template-columns: auto 1fr auto;
     align-items: center;
     min-height: var(--space-1375);
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 999;
+    align-self: flex-start;
 }
 
 .site-header__hamburger, .site-header__close {
