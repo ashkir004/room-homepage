@@ -14,15 +14,21 @@
     --grey-800: #444444;
 
     --space-0: 0px;
-    --space-200: calc(16 * 1rem);
-    --space-300: calc(24 * 1rem);
-    --space-400: calc(32 * 1rem);
-    --space-500: calc(40 * 1rem);
-    --space-600: calc(48 * 1rem);
-    --space-700: calc(56 * 1rem);
-    --space-800: calc(64 * 1rem);
-    --space-900: calc(72 * 1rem);
-    --space-1000: calc(80 * 1rem);
+    --space-100: calc(8 / 16 * 1rem);
+    --space-200: calc(16 / 16 * 1rem);
+    --space-300: calc(24 / 16 * 1rem);
+    --space-400: calc(32 / 16 * 1rem);
+    --space-500: calc(40 / 16 * 1rem);
+    --space-600: calc(48 / 16 * 1rem);
+    --space-700: calc(56 / 16 * 1rem);
+    --space-800: calc(64 / 16 * 1rem);
+    --space-900: calc(72 / 16 * 1rem);
+    --space-1000: calc(80 / 16 * 1rem);
+    --space-1100: calc(88 / 16 * 1rem);
+    --space-1200: calc(96 / 16 * 1rem);
+    --space-1300: calc(104 / 16 * 1rem);
+    --space-1375: calc(110 / 16 * 1rem);
+    --space-1400: calc(112 / 16 * 1rem);
 
     --font: 'League Spartan', sans-serif;
 
@@ -48,8 +54,22 @@
 
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 body {
     font-family: var(--font);
+    background-color: var(--grey-800);
+    color: var(--white);
 }
 
 .text-1 {
