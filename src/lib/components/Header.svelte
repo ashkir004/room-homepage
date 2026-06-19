@@ -138,6 +138,8 @@
         align-items: center;
         justify-content: flex-start;
         min-height: fit-content;
+        margin-block-start: var(--space-800);
+        margin-inline: var(--space-800);
     }
 
     .site-header__nav {
@@ -151,6 +153,23 @@
 
     .site-header__item:hover::after {
         background-color: var(--white);
+    }
+}
+
+@media (min-width: 64rem) {
+    .site-header {
+        margin-inline: var(--space-600);
+        gap: var(--space-700);
+    }
+
+    .site-header__links {
+        gap: var(--space-400);
+    }
+}
+
+@media (min-width: 90rem) {
+    .site-header {
+        margin-inline: var(--space-1000);
     }
 }
 </style>
