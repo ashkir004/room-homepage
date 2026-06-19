@@ -119,6 +119,15 @@
     background-color: var(--black);
 }
 
+.site-header__link:focus-visible {
+    outline: none;
+}
+
+.site-header__item:focus-within::after {
+    width: var(--space-300);
+    background-color: var(--black);
+}
+
 .hidden-mobile {
     display: none;
 }
@@ -152,6 +161,10 @@
     }
 
     .site-header__item:hover::after {
+        background-color: var(--white);
+    }
+
+    .site-header__item:focus-within::after {
         background-color: var(--white);
     }
 }

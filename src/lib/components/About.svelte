@@ -77,6 +77,28 @@
         slide--;
     }
 
+    function handleSliderKeydown(event: KeyboardEvent): void {
+        if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            goPreviousSlide();
+        }
+
+        if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            goNextSlide();
+        }
+
+        if (event.key === 'Home') {
+            event.preventDefault();
+            slide = 1;
+        }
+
+        if (event.key === 'End') {
+            event.preventDefault();
+            slide = slides.length;
+        }
+    }
+
 </script>
 
 <div class="about">
@@ -88,24 +110,26 @@
             <img src={getImageUrl(getCurrentSlide().image.mobile)} alt={getCurrentSlide().alt} loading="eager" decoding="async" />
         </picture>
 
-        <div class="slider">
-            <button class="slider__previous" onclick={goPreviousSlide}>
-                <img src={iconAngleLeft} alt="Previous slide" />
+        <div class="slider" role="region" aria-roledescription="carousel" aria-label="Featured content slider">
+            <p class="sr-only" aria-live="polite" aria-atomic="true">
+                Slide {slide} of {slides.length}: {getCurrentSlide().title}
+            </p>
+            <button class="slider__previous" type="button" aria-label="Show previous slide" aria-controls="about-slide-content" onclick={goPreviousSlide} onkeydown={handleSliderKeydown}>
+                <img src={iconAngleLeft} alt="" aria-hidden="true" />
             </button>
-            <button class="slider__next" onclick={goNextSlide}>
-                <img src={iconAngleRight} alt="Next slide" />
+            <button class="slider__next" type="button" aria-label="Show next slide" aria-controls="about-slide-content" onclick={goNextSlide} onkeydown={handleSliderKeydown}>
+                <img src={iconAngleRight} alt="" aria-hidden="true" />
             </button>
         </div>
 
-        <div class="about-content-wrapper">
-            <div class="about-content">
+        <div class="about-content-wrapper" id="about-slide-content">
+            <div class="about-content" aria-live="polite" aria-atomic="true">
                 <h3 class="about-content__title text-2">{getCurrentSlide().title}</h3>
                 <p class="about-content__text text-3-medium">{getCurrentSlide().text}</p>
             </div>
 
             <div class="about-cta">
                 <a href="#shop" class="about__link text-4">Shop now</a>
-                <!-- <img src={iconArrow} alt="Arrow icon" /> -->
                 <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
             </div>
         </div>
@@ -162,6 +186,10 @@
     }
 
     .slider__previous:hover, .slider__next:hover {
+        background-color: var(--grey-800);
+    }
+
+    .slider__previous:focus, .slider__next:focus {
         background-color: var(--grey-800);
     }
 
