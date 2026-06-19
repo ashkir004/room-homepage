@@ -26,6 +26,7 @@
     --space-800: calc(64 / 16 * 1rem);
     --space-900: calc(72 / 16 * 1rem);
     --space-1000: calc(80 / 16 * 1rem);
+    --space-1050: calc(84 / 16 * 1rem);
     --space-1100: calc(88 / 16 * 1rem);
     --space-1150: calc(92 / 16 * 1rem);
     --space-1175: calc(94 / 16 * 1rem);
@@ -55,7 +56,7 @@
     --letterspacing-md: calc(-0.5 / 16 * 1rem);
     --letterspacing-lg: calc(0.5 / 16 * 1rem);
     --letterspacing-xl: calc(7 / 16 * 1rem);
-    --letterspacing-xxl: calc(12.5 / 16 * 1rem);
+    --letterspacing-xxl: calc(5.83 / 16 * 1rem);
 
 }
 
