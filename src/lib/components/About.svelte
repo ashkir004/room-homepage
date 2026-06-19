@@ -8,7 +8,7 @@
     import iconAngleLeft from '$lib/assets/images/icon-angle-left.svg';
     import iconAngleRight from '$lib/assets/images/icon-angle-right.svg';
 
-    let slide = $state(3);
+    let slide = $state(1);
 
     type SlideItem = {
         title: string;
@@ -162,7 +162,7 @@
     }
 
     .slider__previous:hover, .slider__next:hover {
-        background-color: var(--grey-500);
+        background-color: var(--grey-800);
     }
 
     .slider__previous img, .slider__next img {
