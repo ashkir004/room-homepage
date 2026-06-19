@@ -106,7 +106,8 @@
 
             <div class="about-cta">
                 <a href="#shop" class="about__link text-4">Shop now</a>
-                <img src={iconArrow} alt="Arrow icon" />
+                <!-- <img src={iconArrow} alt="Arrow icon" /> -->
+                <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
             </div>
         </div>
                 
@@ -161,6 +162,10 @@
         padding: var(--space-300);
     }
 
+    .slider__previous:hover, .slider__next:hover {
+        background-color: var(--grey-500);
+    }
+
     .slider__previous img, .slider__next img {
         display: block;
         width: var(--space-200);
@@ -202,6 +207,14 @@
         align-items: center;
         justify-content: space-between;
         gap: var(--space-300);
+    }
+
+    .about-cta a:hover {
+        color: var(--grey-500);
+    }
+
+    .about-cta a:hover + svg path {
+        fill: var(--grey-500);
     }
 
 @media (min-width: 48rem) {
