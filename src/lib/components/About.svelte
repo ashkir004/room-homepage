@@ -5,7 +5,6 @@
     import desktopHero1 from '$lib/assets/images/desktop-image-hero-1.jpg';
     import desktopHero2 from '$lib/assets/images/desktop-image-hero-2.jpg';
     import desktopHero3 from '$lib/assets/images/desktop-image-hero-3.jpg';
-    import iconArrow from '$lib/assets/images/icon-arrow.svg';
     import iconAngleLeft from '$lib/assets/images/icon-angle-left.svg';
     import iconAngleRight from '$lib/assets/images/icon-angle-right.svg';
 

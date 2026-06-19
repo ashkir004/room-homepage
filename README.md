@@ -1,42 +1,31 @@
-# sv
+# Frontend Mentor - Room Homepage
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**Brief**
 
-## Creating a project
+This repository contains a responsive e-commerce homepage built to match the Room design challenge from Frontend Mentor. The project showcases an interactive product slider with a modern furniture retail interface, focusing on responsive design, keyboard navigation, and smooth user interactions.
 
-If you're seeing this, you've probably already done this step. Congrats!
+**Features**
 
-```sh
-# create a new project
-npx sv create my-app
-```
+- Responsive layout
+- Interactive image slider: navigate using mouse/trackpad or keyboard controls.
+- Hover states for all interactive elements with smooth transitions.
+- Semantic HTML5 markup for better accessibility.
+- Mobile-first responsive design with modern CSS Grid and Flexbox.
 
-To recreate this project with the same configuration:
+**Tech Stack**
 
-```sh
-# recreate this project
-npx sv@0.16.1 create --template minimal --types ts --add prettier eslint --install npm .
-```
+- HTML5
+- CSS3 (Flexbox, CSS Grid, and CSS Custom Properties)
+- JavaScript (ES6+)
+- Svelte & SvelteKit (component framework)
+- TypeScript (for type safety)
 
-## Developing
+### Links
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- Repository: [room-homepage](https://github.com/ashkir004/room-homepage)
 
-```sh
-npm run dev
+- Live Site: [Room Homepage Live](https://room-homepage-ashkir.netlify.app/)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
 
-## Building
 
-To create a production version of your app:
 
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
